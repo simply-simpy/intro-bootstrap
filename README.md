@@ -29,16 +29,34 @@ We will be building the main Bootstrap CSS file from the .scss source files, whi
 1. You should notice how the font looks slightly fif
 
 #### Customizing our app
-1. Let's setup a responsive grid system, and center our existing content. To do that we will use [Bootstrap's grid system](https://getbootstrap.com/docs/4.0/layout/grid/).
+1. Let's setup a responsive grid system. To do that we will use [Bootstrap's grid system](https://getbootstrap.com/docs/4.0/layout/grid/).
 1. Go to Bootstrap 4.0's grid system [here](https://getbootstrap.com/docs/4.0/layout/grid/).
 
 ![](.README_images/bootstrap_grid.png)
 
-1. Click on the copy link in the right corner of the HTML you see under How it Works
-1. Paste this HTML just before the closing App div in your app.
+1. Delete the existing div `.App` and all of it's contents.
+1. Click on the copy link in the right corner of the HTML you see under 'How it Works'.
+1. Paste this HTML inside of the return states parenthesis.
 1. Change `class` to `className` in each of the 5 instances in order to be React compliant.
 1. You now should see the text 'One of three columns` repeated three times in a row.
 1. This is a small example of the Bootstrap grid, which consists of a `.container`, a `.row`, and a `*-col` class. In our case it is a `col-sm` class.
+
+#### Adding our own CSS
+1. In order to better see the grid, lets create some custom CSS.
+1. Inside the `scss` folder create another `scss` file called `_app.scss`
+1. In order to include this scss in our compilation, we need to import it on `main.scss`. In `main.scss` type: `@import "_app";`
+1. Add a background color the the row cells by typing: `.col-sm {background-color: pink;}` into `_app.scss`
+1. Refresh your HTML page. Do you see a change? No. The reason, we have not run the scss build script again.
+1. Inside terminal, type `npm run build-css`. — You should see the new background color and outline.
+1. Do we have to run the CSS build script each time? No, let's set up a watcher that will watch for changes and automatically build our CSS. Update the `build-css` to include `--watch --recursive` as follows: ` "build-css": "node-sass src/scss/main.scss ./src/main.css --watch --recursive"`
+1. Now stop, and restart your server (`control c` in the process window, or close the terminal window where the process is running)
+
+TODO: update directions with package.json watch, cleanup scripts if possible.
+
+
+
+
+
 
 
 

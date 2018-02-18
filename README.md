@@ -56,6 +56,11 @@ We will be building the main Bootstrap CSS file from the .scss source files, whi
 
 #### Adding only the parts of Bootstrap you need
 
+#### Other ways to build your scss files
+- (CodeKit)[https://codekitapp.com/]
+- (GulpJS)[https://gulpjs.com/]
+- (WebPack)[https://webpack.js.org/]
+
 TODO: update directions with package.json watch, cleanup scripts if possible.
 
 

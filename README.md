@@ -52,6 +52,8 @@ We will be building the main Bootstrap CSS file from the .scss source files, whi
 1. Now stop, and restart your server (`control c` in the process window, or close the terminal window where the process is running)
 1. Resize your browser to see the responsive grid in action
 
+#### Adding other Bootstrap components
+
 #### Custom Variables
 
 #### Adding only the parts of Bootstrap you need

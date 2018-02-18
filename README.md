@@ -7,6 +7,10 @@
 1. Inside same folder, type: `npm install bootstrap --save` to install bootstrap from the NPM registry. The --save flag stores a record of this installation to your package.json file.
 1. Type `npm install jquery --save` to install jquery, which is required by Bootstrap.
 1. Type `npm install popper.js@^1.12.9`, which is also required by Bootstrap.
+1. Inside the `src` folder delete all files except for `App.js` and `index.js`
+1. Inside `App.js` remove `import logo from './logo.svg';`, `import './App.css';` and `<img src={logo} className="App-logo" alt="logo" />`;
+1. Inside `index.js` remove `import './index.css';`, `import registerServiceWorker from './registerServiceWorker';`, and `registerServiceWorker();`
+1. The app should rebuild with no visual styles, but with the page title of 'Welome to React'.
 
 
 

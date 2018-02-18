@@ -50,6 +50,11 @@ We will be building the main Bootstrap CSS file from the .scss source files, whi
 1. Inside terminal, type `npm run build-css`. — You should see the new background color and outline.
 1. Do we have to run the CSS build script each time? No, let's set up a watcher that will watch for changes and automatically build our CSS. Update the `build-css` to include `--watch --recursive` as follows: ` "build-css": "node-sass src/scss/main.scss ./src/main.css --watch --recursive"`
 1. Now stop, and restart your server (`control c` in the process window, or close the terminal window where the process is running)
+1. Resize your browser to see the responsive grid in action
+
+#### Custom Variables
+
+#### Adding only the parts of Bootstrap you need
 
 TODO: update directions with package.json watch, cleanup scripts if possible.
 

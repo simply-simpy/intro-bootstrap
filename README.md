@@ -1,7 +1,12 @@
 ## Intro to Bootstrap
 
 1. Create a new folder in your sites app.
-1. move into that folder and type: `create-react-app .` inside terminal to create a new react app
+1. Move into that folder and type: `create-react-app .` inside terminal to create a new react app.
+1. Type `npm install` in the terminal to install the dependencies for React.
+1. After these have loaded, type `npm start` in the terminal to check the React install.
+1. Inside same folder, type: `npm install bootstrap --save` to install bootstrap from the NPM registry. The --save flag stores a record of this installation to your package.json file.
+1. Type `npm install jquery --save` to install jquery, which is required by Bootstrap.
+1. Type `npm install popper.js@^1.12.9`, which is also required by Bootstrap.
 
 
 
